@@ -13,7 +13,7 @@ a:link{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  }
+}
 .inscription{
   display: flex;
   padding: 3%;
@@ -24,18 +24,15 @@ a:link{
   background-color: #F5B532;
   color: white;
 }
-.logo-form{
-  display: flex;
+.form-color{
+background-color: #A9A9A9;
+color: black;
 }
-.logo-labcar{
-  margin-left: 10px;
-}
-.bien{
-  color: white;
-  display: flex;
+.btn-form{
+background-color: #60C0DC;
 }
 hr{
-  border-bottom:  1px solid white;
+  border-bottom: 1px solid white;
   color: white;
   width: 10vw;
 }
@@ -46,7 +43,6 @@ hr{
   justify-content: flex-start;
   align-items: center;
 }
-
 .line{
   width: 80vw;
   height: 50vh;
@@ -60,11 +56,6 @@ hr{
 width: 50vw;
 height: 50vh;
 }
-.text-app{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  }
 .conductor{
   color: white;
   background-image: url("../images/conduce.jpg");
@@ -73,13 +64,10 @@ height: 50vh;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: flex-end;
 }
 .message-conductor{
-  background-color: black;
   opacity: 0.5;
-  width: 30vw;
+  width: 28vw;
   height: 34vh;
 }
 .tarifas{
@@ -135,4 +123,43 @@ height: 50vh;
   grid-area: send;
   margin: 15px;
   margin-left: 25px;
+}
+footer{
+  height: 53vh;
+  background-color: #2B2B2B;
+  color: white;
+}
+.title-footer{
+  padding: 3% 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 3%;
+}
+.words{
+  word-spacing: 10px;
+}
+.images-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1200px){
+  .mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+.mobile-hidden{
+    display: none;
+  }
+.inscription{
+  width: 90vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+.mobile{
+  display: flex;
+  flex-direction: column;
+  }
 }

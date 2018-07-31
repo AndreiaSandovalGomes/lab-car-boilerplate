@@ -58,23 +58,22 @@
         </div>
        </div>
     </div>
-    <section class="register">
-      <div class="inscription">
-        <div class="mobile">
-          <div class="flex-sm-column">
+    <section class="register d-flex justify-content-end align-items-center">
+      <div class="inscription  d-flex justify-content-around flex-column p-3 text-white">
+        <div class="d-sm-block d-md-none">
+          <div>
            <h1>Comianza a viajar con<h1>
            <img class="logo-labcar ml-2" src="images/logoBlanco.png" width="60vw" height="20vh">
          </div>
           <input class="btn btn-light"type="button" value="Descarga el app">
         </div>
-        <div class="mobile-hidden">
+        <div class="d-md-block d-none">
           <h2>Disfruta del viaje<br>
             Eres dueño de tu tiempo</h2>
           <div class="d-flex">
             <p>Viaja con</p>
             <img class="logo-labcar ml-2" src="images/logoBlanco.png" width="60vw" height="20vh">
           </div>
-
       <a class="btn btn-light" href="#registrate" data-toggle="modal" data-target="#orangeModalSubscription">Registrate</a>
       <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">          <div class="modal-dialog modal-notify modal-warning" role="document">
           <div class="modal-content form-color">
@@ -140,7 +139,7 @@
                 <div class="form-group mb-1">
                   <label>Elige la marca del vehiculo</label>
                   <input type="text" class="form-control" placeholder="Marca">
-                  <h6> No ves tu vehiculo en la lista? Envia un correo electronico a</h6>
+                  <p> No ves tu vehiculo en la lista? Envia un correo electronico a</p>
                   <a>sociosmdv@uber.com</a>
                 </div>
                 <div class="form-group mb-1">
@@ -166,12 +165,14 @@
       </div>
       </div>
     </section>
-    <section class="new-app">
-      <div class="line">
+    <section class="new-app d-flex justify-content-start align-items-center">
+      <div class="line d-flex justify-content-center align-items-center bl-0">
         <div class="cell-phone">
-          <img class="img-fluid" src="images/iphone6Plus.png">
+          <h1 class="d-sm-block d-md-none text-white">La nueva app</h1>
+          <img class="img-fluid" src="images/iPhone6Plus.png">
+          <h4 class="d-sm-block d-md-none text-white">Llega aún destino más rápido</h4>
         </div>
-        <div class="text-app text-white flex-sm-column">
+        <div class="text-app text-white flex-column d-md-block d-none">
           <h2>Descarga la nueva app</h2>
           <p>La version actualizada está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
           <p> Con solo tocar un bottón, un auto llega justo a tu ubicación. Súbete y no te preocupes tu conductor sabe exactamente a donde ir.</p>
@@ -179,7 +180,7 @@
       </div>
     </section>
     <section class="conductor d-flex justify-content-end">
-      <div class="message-conductor bg-black p-4">
+      <div class="message-conductor bg-dark p-4">
         <h3>Conduce cuando quieras</h3>
         <p> LabCar és una opción flexible para alcanzar tus metas financieras.</p>
         <a class="btn btn-warning text-white" href="#registrate" data-toggle="modal" data-target="#conductor">Conviertete en conductor</a>
@@ -199,9 +200,8 @@
                 <div class="form-group mb-1">
                   <label>Elige la marca del vehiculo</label>
                   <input type="text" class="form-control" placeholder="Marca">
-                  <h6> No ves tu vehiculo en la lista? Envia un correo electronico a</h6>
+                  <p> No ves tu vehiculo en la lista? Envia un correo electronico a</p>
                   <a class="font-italic">sociosmdv@uber.com</a>
-                </div>
                 <div class="form-group mb-1">
                   <label>Modelo</label>
                   <input type="text" class="form-control" placeholder="Modelo1">
@@ -224,7 +224,7 @@
         </div>
       </div>
     </section>
-    <section class="tarifas">
+    <section class="tarifas d-flex justify-content-around">
       <div>
         <h3 class="title-tarifas">Tarifas</h3>
         <h4 class="text-tarifas">Consulta las tarifas LabCar aqui</h4>
@@ -237,7 +237,7 @@
         </div>
       </div>
       <div id="map">
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:450px;width:450px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="https://embedgooglemaps.com/fr/">https://embedgooglemaps.com/fr/</a></small></div><div><small><a href="https://sparpedia.no/">http://sparpedia.no/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-23.5577103,-46.662396),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-23.5577103,-46.662396)});infowindow = new google.maps.InfoWindow({content:'<strong>PROJETO LABCAR</strong><br>Alameda Santos, 2356 - Jardim Paulista, São Paulo - SP, 01419-002<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:48vh;width:50vw;'><div id='gmap_canvas' style='height:50vh;width:50vw;'></div><div><small><a href="https://embedgooglemaps.com/fr/">https://embedgooglemaps.com/fr/</a></small></div><div><small><a href="https://sparpedia.no/">http://sparpedia.no/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-23.5577103,-46.662396),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-23.5577103,-46.662396)});infowindow = new google.maps.InfoWindow({content:'<strong>PROJETO LABCAR</strong><br>Alameda Santos, 2356 - Jardim Paulista, São Paulo - SP, 01419-002<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
       </div>
     </section>
     <footer>
@@ -257,31 +257,35 @@
           <div class="col-md-3">
           </div>
           <div class="col-md-3">
-            Viaja</br>
-            Conduce</br>
-            Ciudades</br>
-            Ciudades</br>
-            Entregas</br>
-            Cômo funciona?</br>
-            Paises</br>
-            Seguridad</br>
+            <ul class="list-unstyled">
+              <li>Viaja</li>
+              <li>Conduce</li>
+              <li>Ciudades</li>
+              <li>Ciudades</li>
+              <li>Entregas</li>
+              <li>Cômo funciona?</li>
+              <li>Paises</li>
+              <li>Seguridad</li>
+            </ul>
           </div>
           <div class="col-md-3">
-            Oportunidades</br>
-            Nuestra historia</br>
-            API de LabCar</br>
-            Eventos</br>
-            Desarroladores</br>
-            Servicios</br>
-            Laboratoria</br>
-            Coders</br>
+            <ul class="list-unstyled">
+              <li class="d-sm-block d-none">Oportunidades</li>
+              <li class="d-sm-block d-none">Nuestra historia</li>
+              <li class="d-sm-block d-none">API de LabCar</li>
+              <li class="d-sm-block d-none">Eventos</li>
+              <li class="d-sm-block d-none">Desarroladores</li>
+              <li class="d-sm-block d-none">Servicios</li>
+              <li class="d-sm-block d-none">Laboratoria</li>
+              <li class="d-sm-block d-none">Coders</li>
+            </ul>
           </div>
           <div class="col-md-3 images-app">
             <img class="img-fluid mb-3" src="images/appstore.png">
             <img class="img-fluid" src="images/enBadgeWebGeneric.png">
           </div>
         </div>
-        <div class="row title-footer">
+        <div class="row title-footer mb-3">
           <div class="col-md-3">
             <i class="icon-facebook"></i>
             <i class="icon-twitter"></i>
@@ -289,23 +293,9 @@
             <i class="icon-social-apple"></i>
             <i class="icon-caret-right"></i>
           </div>
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-          </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
-            &copy; 2017 LabCar Tecnologies Inc.
-          </div>
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-          </div>
+          <p>&copy; 2017 LabCar Tecnologies Inc.</p>
         </div>
       </div>
     </footer>
